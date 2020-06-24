@@ -3,12 +3,30 @@
 <head>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="plant.js"></script>
-  <title>Grow Your Plant</title>
+  <script type="text/javascript" src="rpg.js"></script>
+  <title>RPG</title>
 </head>
 
 <body>
   <div class="container">
+    <form id="player-form">
+      <div class="form-group">
+        <label for="player-name">Enter your name:</label>
+        <input id="player-name" required>
+        <br>
+        <label for="player-type">Choose your class:</label>
+        <select class="form-control" id="player-type">
+          <option>Warrior</option>
+          <option>Wizard</option>
+          <option>Rogue</option>
+          <option>Bard</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Create Character!</button>
+    </form>
+  </div>
+  <div id="output">
+
   </div>
 </body>
 
