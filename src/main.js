@@ -1,16 +1,17 @@
 import { changeState, storeState } from './rpg.js';
 import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import $ from "jquery";
 
 const givePlayerName = changeState("name");
 const givePlayerType = changeState("type");
 const givePlayerAbility = changeState("ability");
-const givePlayerHealth = changeState("health");
-const givePlayerExperience = changeState("experience");
-const givePlayerLevel = changeState("level");
-const givePlayerMana = changeState("mana");
+export const givePlayerHealth = changeState("health");
+export const givePlayerExperience = changeState("experience");
+export const givePlayerLevel = changeState("level");
+export const givePlayerMana = changeState("mana");
+
 $(document).ready(function () {
 
   $("#player-form").submit(function (event) {
