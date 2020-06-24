@@ -45,7 +45,7 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 | Spec | Input | Output |
 | :------------- | :------------- | :------------- |
 | **User can enter character name** | User Input:"Name: Coraline" | Output: “Welcome Coraline!” |
-| **User can chooes multiple character types** | User Input:"warriors" | Output: “Name: Coraline, Type: warriors” |
+| **User can choose from multiple character types** | User Input:"warriors" | Output: “Name: Coraline, Type: warriors” |
 | **User can assign different characters different abilities** | User Input:"strength" | Output: “Ability: strength” |
 | **User can battle enemies** | User Input:"Fight: Zombie" | Output: “Battle start!” |
 | **User can attack** | User Input:"Attack with sword" | Output: “Damage: 5” |
