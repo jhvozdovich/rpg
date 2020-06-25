@@ -25,6 +25,11 @@ export const changeState = (prop) => {
   };
 };
 
+export const changePoints = changeState("points");
+export const initialCharcter = { name: "", experience: 0, ability: "", type: "", health: 10, money: 0, };
+
+
+
 //take in two functions and return state object
 // updateFunction aka player, updatingFunction aka player1Name
 // export const returnState = () => {
@@ -58,7 +63,7 @@ export const changeState = (prop) => {
 // export const playerInfo = returnState();
 //Initial character Vaules
 
-export const initialCharcter = { name: "", experience: 0, ability: "", type: "", health: 10, money: 0, };
+
 
 //const player = storeState({ health: 10 });
 // export const giveName = changeState("name");

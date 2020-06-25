@@ -1,0 +1,7 @@
+#battle-form, #dragon, #giant, #enemy, #run {
+  display: none;
+}
+
+#buttonUser{
+  display: none;
+}

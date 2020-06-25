@@ -4,14 +4,18 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="rpg.js"></script>
+  <link href=".././css/styles.css" rel="stylesheet" type="text/css">
   <title>RPG</title>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" style="text-align: center;">
+    <div class="jumbotron">
+      <h1>Welcome to the Battle World</h1>
+    </div>
     <form id="player-form">
       <div class="form-group">
-        <label for="player-name">Enter your name:</label>
+        <label for="player-name">Enter your name:</label><br>
         <input id="player-name" required>
         <br>
         <label for="player-type">Choose your class:</label>
@@ -28,13 +32,87 @@
           <option>Sneak Attack</option>
           <option>Charm</option>
         </select>
-      </div>
-      <button type="submit" class="btn">Create Character!</button>
-    </form>
-  </div>
-  <div id="output">
 
-  </div>
+      </div>
+      <button type="submit" class="btn-success">Create Character!</button>
+    </form>
+
+    <div class="col-md-3" id="output"></div>
+
+    <form id="battle-form">
+      <p>Please select your target:</p>
+      <input type="radio" id="target" name="target" value="dragon">
+      <label for="dragon">Dragon</label><br>
+      <input type="radio" id="target" name="target" value="giant">
+      <label for="giant">Giant</label>
+      <input type="radio" id="target" name="target" value="goblin">
+      <label for="giant">Goblin</label>
+      <br>
+      <button type="submit" class="btn-success">Start Battle!</button>
+    </form>
+
+    <div class="row" id="battle">
+      <div class="col-md-3">
+        <div id="buttonUser">
+          <!-- <button class="btn-success" id="attack">Attack</button> -->
+          <button class="btn-success" id="Punch">Punch</button>
+        </div>
+        <button class="btn-danger" id="run">Run</button>
+
+        <div class="col-md-3" id="enemy">
+          <h2><u id="enemy-name"></u></h2>
+          <p>HP: <span id="enemy-hp"></span></p>
+        </div>
+      </div>
+
+
+
+      <!-- Dragon zoon -->
+
+      <div class="col-md-3" id="dragon">
+        <h2><u>Dragon</u></h2>
+        <br>
+        <div class="game-buttons">
+          <div id="dragonResult"></div>
+          Your level is: <div id="dragonLevel">0</div>
+          Your current points are: <div id="dragonPoints">0</div>
+          <br>
+          <button class="btn-success" id="fireBreath">Fire Breath</button>
+          <button class="btn-success" id="bite">Bite</button>
+        </div>
+      </div>
+      <!-- Dragon zoon -->
+
+      <!-- giant zoon -->
+      <div class="col-md-3" id="giant">
+        <h2><u>Giant</u></h2>
+        <br>
+        <div class="game-buttons">
+          <div id="giantResult"></div>
+          Your level is:<div id="giantLevel">0</div>
+          Your current points are: <div id="giantPoints">0</div>
+          <br>
+          <button class="btn-success" id="stomp">Stomp</button>
+          <button class="btn-success" id="throwBoulder">Throw a Boulder</button>
+          <button class="btn-success" id="feFiFoFum">FeFiFoFum</button>
+        </div>
+        <!-- giant zoon -->
+
+        <!-- goblin -->
+        <div class="col-md-3" id="giant">
+          <h2><u>Goblin</u></h2>
+          <br>
+          <div class="game-buttons">
+            <div id="goblinResult"></div>
+            Goblin Level:<div id="goblinLevel">0</div>
+            Goblin HP: <div id="giantPoints">0</div>
+          </div>
+          <!-- goblin -->
+        </div>
+      </div>
+    </div>
+
+
 </body>
 
 </html>
