@@ -1,6 +1,6 @@
 # **Role Playing Game**
 
-#### Author: **_Jessica Hvozdovich, Nitun Datta**
+#### Author: **_Jessica Hvozdovich, Nitun Datta_**
 #### June 23, 2020
 
 ### Description
@@ -78,4 +78,4 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 
 This software is licensed under the MIT license.
 
-Copyright © 2020 **_Jessica Hvozdovich, Antonio Cruz, and Eric Settels_**
+Copyright © 2020 **_Jessica Hvozdovich and Nitun Datta_**
